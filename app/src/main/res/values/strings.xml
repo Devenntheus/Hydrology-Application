@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoRaWan Cloud</string>
+    <string name="pre_warning">Pre Warning</string>
+</resources>
