@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">LoRaWan Cloud</string>
+    <string name="reset">Reset</string>
     <string name="pre_warning">Pre Warning</string>
+    <string name="red_alert">Red Alert</string>
+    <string name="all_clear">All Clear</string>
+    <string name="disaster_warning">Disaster Warning</string>
 </resources>

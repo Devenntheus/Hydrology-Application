@@ -12,34 +12,86 @@
         android:id="@+id/InnerMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:id="@+id/topLinearMain"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <Button
-                android:id="@+id/preWarningButton"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:background="@drawable/pre_warning_button_selector"
-                android:text="@string/pre_warning"
+                android:id="@+id/resetButton"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/reset_button_selector"
+                android:text="@string/reset"
                 android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="16sp"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
-        <LinearLayout
+        <GridLayout
             android:id="@+id/bottomLinearMain"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            />
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/preWarningButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/pre_warning_button_selector"
+                android:text="@string/pre_warning"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/redAlertButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/alert_button_selector"
+                android:text="@string/red_alert"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/allClearButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/clear_button_selector"
+                android:text="@string/all_clear"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/disasterWarningButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/disaster_warning_button_selector"
+                android:text="@string/disaster_warning"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </GridLayout>
 
     </LinearLayout>
 
